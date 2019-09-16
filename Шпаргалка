@@ -1,0 +1,36 @@
+flexbox {
+	.konteiner {
+		 display: flex;
+		/*  flex; Контейнер макс ширини, елементи с краю в ряд.*/
+		/*  Inline-flex;  Контейнер min ширини */
+		 flex-direction: column; /* Головна ось*/
+		 /* "-reverse" - з заду на перед*/
+		/*  row;  Елементи в рядок (по умолчанию)*/
+		/*  column; /* Елементи в стовпчик */
+		flex-wrap: no-wrap;  /* Елементи в 1 рядок */
+		/* wrap Елементи не в 1 рядок */
+		justify-content: center;
+		 /* flex-start;  Елементи зліва (по умолчанию) */
+		/*  flex-end;  Елементи справа */
+		/*  center;  Елементи поцентру */
+		/*  space-between;  Елементи по ширині, крайні по  краям */
+		/*  space-around;  Елементи по ширині, крайні не по  краям */
+			align-items: center; /* Поперечна ось*/
+		/*  center; рядок по центру */
+		/*  stretch; розтянуть  (по умолчанию)*/   
+		/* flex-start;  Елементи прижаті до початку */ 
+		/*  flex-end;  Елементи прижаті до кінця */
+		align-content: ;
+		flex-grow: 0; /* жадность к пустому месту*/
+		flex-flow: ; /*flex-direction: flex-wrap:*/
+	}
+
+	.element {
+		align-self: center;   
+		/*  flex-start;  елемент спочатку */
+		/*  flex-end;  елемент в кінці */
+		/*  center;  елемент (рядок) поцентру   */
+		flex-basis: 100px(%);/* базова ширина */
+		flex-grow: 0;  /* жадность к пустому месту*/
+	 }
+}
