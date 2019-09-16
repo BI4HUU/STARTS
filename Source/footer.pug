@@ -1,0 +1,27 @@
+footer.container-fluid
+	.container
+		.row
+			.col-12.col-sm-12.col-xl-10
+				.row
+					.col-12.col-sm-12.col-md-3
+						h3 Departments
+						.services_sep
+						mixin col_footer_group(arr4)
+							ul
+								each val in arr4
+									li= val
+						+col_footer_group( ["Experienced Physicians", "Personalized Treatment", "Quality and Safety", "Immediate Service", "Colonoscopy"] )
+					.col-12.col-sm-12.col-md-3
+						h3 Head Office
+						.services_sep
+						+col_footer_group( ["4096 N Highland St, Arlington", "VA 32101, USA", "info@beclinic.com", "800 1234 56 78", ". ", "Mon-Thu: 9:30 – 21:00", "Fri: 6:00 – 21:00", "Sat: 10:00 – 15:00"] )
+					.col-12.col-sm-12.col-md-3
+						h3 Quick Links
+						.services_sep
+						+col_footer_group( ["Home", "Departments", "Credit slips", "About", "News", "Contacts"] )
+					.col-12.col-sm-12.col-md-3
+						h3 Contact Us
+						.services_sep
+						input.form.footer_form(type='email' placeholder='Email')
+						textarea.form.footer_form( placeholder='Message' rows='4')
+						.btn.footer_btn submit
