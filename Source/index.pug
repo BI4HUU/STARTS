@@ -2,13 +2,16 @@
 html(lang="en")
 	head
 		title Vizitka
-		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
-		link(href='style.css' rel='stylesheet' type='text/css')
+		meta(charset="UTF-8")
+		style
+			include ../Build/style.css
 	body
 		include header_mini
 		include cards
 	//- script(src="JS.js")
+	//- script
+	//- 	include ../Build/script.js
 	script(src="http://127.0.0.1:35729/livereload.js?ext=Firefox&extver=0.0.46")
 
 
